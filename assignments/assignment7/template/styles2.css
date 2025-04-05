@@ -1,0 +1,80 @@
+body {
+    font-family: Verdana,sans-serif;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 1em;
+    text-align: center;
+    background-image: url("https://www.w3schools.com/html/img_5terre.jpg");
+    background-size: cover;
+    background-color: rgba(255,255,255,0.8);
+    background-blend-mode: lighten;
+}
+
+main
+{
+    display: flex;
+}
+
+nav {
+    width: 20%;
+}
+
+.menuitem {
+    display: block;
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.center {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.right {
+    background-color: lightblue;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+}
+
+img {
+    width: 100%;
+}
+
+p
+{
+    font-size: clamp(1rem, -5vw + 5px, 3rem);
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    main
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .center {
+        width: 100%;
+        padding: 0;
+    }
+    .right {
+        width: 100%;
+    }
+    p
+    {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .center, .right {
+        width: 100%;
+    }
+    p
+    {
+        font-size: 3rem;
+    }
+}

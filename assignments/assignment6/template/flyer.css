@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+    font-family: Domine, serif;
+}
+
+body {
+    background-color: white;
+    color: #23222b;
+}
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h1,h2 {
+    font-family: "Playwrite AU SA", serif;
+}
+
+#conf-description {
+    color: #ddd;
+    font-size: 1rem;
+}
+
+/* Write your own CSS below.  Don't modify anything above this comment. */
+.body-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    gap: 1em;
+}
+
+.item-1
+{
+    grid-column: 2/3;
+    grid-row: 1/1;
+
+    text-align: right;
+}
+
+.item-2
+{
+    grid-column: span 2;
+    grid-row: 2/2;
+
+    text-align: right;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.item-2 > div > *
+{
+    padding: 0.3em;
+}
+
+.underline-div
+{
+    border-bottom: 2px solid black;
+}
+
+.item-3
+{
+    grid-column: 2/2;
+    grid-row: 3/3;
+
+    text-align: right; 
+}
+
+.item-3 > ul
+{
+    list-style-type: none;
+    padding: 1em;
+}
+
+.item-4
+{
+    grid-column: 3/3;
+    grid-row: span 2;
+}
+
+.item-4 > img
+{
+    min-width: 10em;
+    min-height: 20em;
+}
+
+.item-5
+{ 
+    grid-column: 3/3; 
+    grid-row: 3/3;
+}
+
+.item-5 > ul
+{
+    list-style-type: none;
+    padding: 1em;
+}
+

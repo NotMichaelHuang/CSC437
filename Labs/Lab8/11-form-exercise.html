@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Exercise</title>
+    <style>
+        .error-message {
+            width: max-content;
+            color: red;
+            border: 1px solid firebrick;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="http://example.com" novalidate>
+        <div>
+            <label for="input1">Cal Poly email address:</label>
+            <input type="email" name="email" id="input1" required aria-describedby="msg"/>
+            <div id="msg" class="error-message hidden">Error: email address must end with @calpoly.edu</div>
+        </div>
+        <input type="submit" value="Submit" />
+    </form>
+
+    <!-- TODO step 1: prep the HTML:
+        1. Modify the HTML so the error message is associated with the input using aria-describedby (Google aria-describedby or go to the reading if you don't know how)
+        2. Add the "novalidate" attribute to the <form> to prevent the browser's error message from showing.  (Google novalidate if you don't know how).
+    -->
+
+<script>
+    /*
+    TODO Step 2: Show the error message div and block form submission if the text box doesn't end with @calpoly.edu.
+      1. You will need to attach an event listener to the <form> handling "submit" events
+      2. eventObj.preventDefault() will block form submission
+      3. Show the error div by removing the CSS class that is hiding it. (Don't know how to remove a CSS class? Google it.)
+      4. If invalid, add the aria-invalid="true" attribute to the <input> (Don't know how to add an attribute? Google it.)
+      5. If invalid, make the screen reader proactively announce an error: use nameInput.focus()
+     */
+
+    const nameInput = document.getElementById("input1");
+    // nameInput.value will read what the user has typed in.
+    // someStr.endsWith("otherStr") will return true if the string ends with another string, false otherwise
+    const errorDiv = document.querySelector(".error-message");
+
+    // Syntax for attaching event listener: someElement.addEventListener("eventType", functionToRun);
+    const formElement = document.querySelector("form");
+    formElement.addEventListener("submit", (event) => {
+        event.preventDefault(); // Prevent reload
+        const isValid = nameInput.value.endsWith("@calpoly.edu");
+        errorDiv.classList.toggle("hidden", !isValid);
+        if(!isValid)
+        {
+            nameInput.setAttribute("aria-invalid", "true"); nameInput.focus();
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 1em;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.dice-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.dice-container > * {
+    border: 1px solid lightgray;
+    padding: 1em;
+}

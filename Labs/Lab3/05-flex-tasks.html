@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Tasks</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            margin: 1em 0;
+        }
+
+        h2 {
+            margin-top: 1em;
+        }
+
+        .large-action-button {
+            padding: 1em;
+            border: 0;
+            border-radius: 0.25em;
+            background-color: lightblue;
+        }
+        .small-action-button {
+            background-color: lightblue;
+            padding: 0.5em 0.75em;
+            border: 0;
+            border-radius: 0.25em;
+        } 
+
+        .large-action-button
+        {
+            justify-content: end;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex challenges</h1>
+    <h2>Challenge 1</h2>
+    <style>
+        /* You can write your Challenge 1 styles here.  Technically, <style> must be inside <head> to be valid HTML but
+        for just this class exercise I'm putting it here because it works. */
+        .challenge-1-container {
+            padding: 1em;
+            background-color: darkslateblue;
+            
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 1em;
+
+        }
+        .challenge-1-container a {
+            color: white;
+        }
+
+        .challenge-2-container
+        {
+            padding: 1em;
+            background-color: darkslateblue;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .challenge-2-container > div
+        {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 1em;
+        }
+
+        .challenge-2-container a
+        {
+            color: white;
+        }
+        
+    </style>
+    <nav class="challenge-1-container">
+        <a href="#"><img src="https://placehold.co/100x50?text=Website+Logo" alt="Go to homepage" /></a>
+        <a href="#">Subpage link</a>
+        <a href="#">Subpage link</a>
+    </nav>
+
+    <!-- TODO -->
+    <h2>Challenge 2b</h2> 
+    <nav class="challenge-2-container">
+        <div>
+            <a href="#"><img src="https://placehold.co/100x50?text=Website+Logo" alt="Go to homepage" /></a>
+            <a href="#">Subpage link</a>
+            <a href="#">Subpage link</a>
+        </div>
+        <button class="large-action-button">Join now!</button>
+    </nav> 
+    
+
+    <h2>Challenge 3</h2>
+    <style>
+        /* You can write your Challenge 3 styles here. */
+        .challenge-3-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            min-height: 100vh;
+            background-color: darkslateblue;
+            color: white;
+        }
+        .challenge-3-container p {
+            font-size: xxx-large;
+        }
+        .challenge-3-container button {
+            font-size: large;
+        }
+    </style>
+    <div class="challenge-3-container">
+        <p>Welcome to our cool site!</p>
+        <button class="large-action-button">Join now!</button>
+    </div>
+
+    <h2>Challenge 4</h2>
+    <style>
+        /* You can write your Challenge 4 styles here. */
+        .challenge-4-container {
+            max-width: 40em;
+            padding: 1em;
+            border: 2px solid firebrick;
+
+            display: flex;
+            gap: 0.5em;
+        }
+
+        .challenge-4-container > input
+        {
+            flex-grow: 1;
+        }
+    </style>
+    <div class="challenge-4-container">
+        <input placeholder="Message" aria-label="Message to your friend" />
+        <button class="small-action-button">Attach...</button>
+        <button class="small-action-button">Send</button>
+    </div>
+
+    <h2>Challenge 5</h2>
+    <style>
+        /* You can write your Challenge 5 styles here. */
+        .challenge-5-container {
+            max-width: 50em;
+            padding: 1em;
+            border: 2px solid firebrick;
+
+            display: grid;
+            grid-template-columns: auto 3fr auto;
+            grid-gap: 1em;
+        }
+
+        .inside-5
+        {
+            justify-content: max-content;
+        }
+    </style>
+    <div class="challenge-5-container">
+        <img src="https://placehold.co/200x150?text=Hotel+Picture" alt="A beautiful hotel" />
+        <div>
+            <h3>Juniper Hollow Hotel</h3>
+            <p>The Juniper Hollow Hotel blends modern comfort with rustic charm. Each room features locally crafted furnishings, plush bedding, and floor-to-ceiling windows offering stunning views of the Blue Ridge Mountains. Complimentary breakfast at the café included.</p>
+        </div>
+        <div class="inside-5">
+            <strong>$132/night</strong>
+            <p>Only 3 left!</p>
+            <button class="small-action-button">Book now</button>
+        </div>
+    </div>
+
+    <h2>Challenge 6</h2>
+    <style>
+        /* You can write your Challenge 6 styles here. */
+        .challenge-6-container {
+            padding: 1em;
+            background-color: darkslateblue;
+        }
+        .challenge-6-container a {
+            color: white;
+        }
+    </style>
+    <nav class="challenge-6-container">
+        <a href="#">Search</a>
+        <a href="#" style="text-align: center;"><img src="https://placehold.co/100x50?text=Website+Logo" alt="Go to homepage" /></a>
+        <a href="#">Another link</a>
+        <a href="#">Another link</a>
+        <button class="large-action-button">Join now!</button>
+    </nav>
+    <div style="text-align: center; margin-top: 1em;">Here is some centered content under the navbar.</div>
+
+    <h2>Challenge 7</h2>
+    <style>
+        /* You can write your Challenge 7 styles here. */
+        .challenge-7-container {
+            max-width: 30em;
+            padding: 1em;
+            border: 2px solid firebrick;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+        }
+
+        .challenge-7-container img {
+            max-width: 100%;
+        }
+
+        .product-info
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1em;
+        }
+    </style>
+    <div class="challenge-7-container">
+        <img src="https://placehold.co/300x350?text=Product+Image" alt="Product image" />
+        <div class="product-info">
+            <h3>You Rock</h3>
+            <p>An inspirational piece to help you be the best you, and inspire those around you</p>
+            <button class="small-action-button">Buy now</button>
+        </div>
+    </div>
+</body>
+</html>
