@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #23222b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: skyblue;
+}
+
+.weblink {
+    background-color: #3c3a49;
+    padding: 0.55em;
+    border-radius: 0.5em;
+}
+
+li {
+    width: 5em; /* So the images don't take up the entire page. */
+}
+
+/* Write your own CSS below.  Don't modify anything above this comment. */
+body
+{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+}
+
+.weather-icon
+{
+    display: flex;
+    justify-content: end;
+    padding: 1em;
+}
+
+.weather-icon > img
+{
+    width: 3%;
+    height: 3%;
+    padding-right: 1em;
+}
+
+.firefox-bundle
+{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+.firefox-bundle > input
+{
+    margin: 2em;
+    width: 41em;
+    height: 2em;
+
+    color: white;
+    border: 0;
+}
+
+.firefox-icon-name
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.shortcuts
+{
+    display: flex;
+    flex-direction: row;
+
+    gap: 1em;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.shortcuts > li
+{
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.shortcuts > li > p
+{
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 10em;
+}
+

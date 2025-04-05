@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Raymundo's Birthday Site!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1 class="font center">RAYMUNDO'S BIRTHDAY WEBSITE!</h1>
+	<p class="font center" id="recordnote" style="margin-top: 0; margin-bottom: 30px;"></p>
+    <div id="main">
+        <img alt="cake" draggable="false" src="cake.jpg" id="cake"/><img alt="flame" draggable="false" src="flame.png" id="flame1"/>
+        <img alt="flame" draggable="false" src="flame.png" id="flame0"/>&nbsp;
+        <img alt="flame" draggable="false" src="flame.png" id="flame2"/>
+        <img alt="flame" draggable="false" src="flame.png" id="flame3"/>
+        <img alt="flame" draggable="false" src="flame.png" id="flame4"/>
+        <img alt="flame" draggable="false" src="flame.png" id="flame5"/>
+        <img alt="flame" draggable="false" src="flame.png" id="flame6"/>
+    </div>
+    <p class="font center" style="margin-bottom: 30px;"><b>Happy birthday, Raymundo!</b>  Click the flames to blow them out and make a wish!</p>
+    <p class="font">Your friend,</p>
+    <p class="font" style="margin-bottom: 30px">Silas<br /><small>(who can't draw birthday cards, so he got the computer to do it for him.)</small></p>
+	
+    <span class="fix-width" id="timer">Current time: 0.00s</span>
+	<span class="fix-width" id="record">Your record: none yet</span>
+	<button id="reset">Rekindle!</button>
+
+	<script src="timer.js"></script>
+    <script>
+		// TODO write your code here!
+        // 1. Listen for clicks on the flames' PARENT element
+        // 2. When one of the flames is clicked, replace its src attribute with "smoke.png".
+        // 3. You will need to use e.target.
+        // 4. Make sure clicking the cake itself doesn't turn it into smoke!
+        const container = document.querySelector('#main');
+
+        container.addEventListener("click", (event) => {
+            if(event.target.getAttribute("src") == "flame.png")
+            {
+                 event.target.setAttribute("src", "smoke.png");
+            } 
+        });
+    </script>
+</body>
+</html>

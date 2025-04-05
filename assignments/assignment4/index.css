@@ -1,0 +1,59 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.box1
+{
+    min-height: 100vh;
+    background-image: url(therapist.jpeg);
+    background-color: #777;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.introduction-h, .introduction-p
+{
+    color: white;
+}
+
+.introduction-h
+{
+    max-width: 11em;
+    font-size: 3em;
+
+    padding: 40px;
+}
+
+.introduction-p
+{
+    max-width: 24em;
+    font-size: 1.5em;
+
+    padding-left: 40px;
+    line-height: 50px;
+}
+
+.clover
+{
+    font-size: 1.3em;
+}
+
+header > a
+{
+    color: white;
+    text-decoration: none;
+}
+
+header > a:hover
+{
+    color: orange;
+    text-decoration: underline;
+}
+
+.textbox
+{
+    position: absolute;
+    bottom: 0;
+}

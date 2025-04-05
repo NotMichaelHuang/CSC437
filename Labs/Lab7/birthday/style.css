@@ -1,0 +1,65 @@
+﻿body {
+    margin-right: auto;
+    margin-left: auto;
+    width: 768px;
+    padding-bottom: 30px;
+}
+
+.font {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.center {
+    text-align: center;
+}
+h1 {
+    color: red;
+    font-weight: bold;
+}
+.fix-width {
+	float: left;
+	width: 200px;
+}
+
+#main {
+    height: 360px;
+}
+img {
+    margin: auto;
+    display: block;
+}
+#flame0 {
+    position: relative;
+    top: -391px;
+    left: -132px;
+}
+#flame1 {
+    position: relative;
+    top: -309px;
+    left: -88px;
+}
+#flame2 {
+    position: relative;
+    top: -485px;
+    left: -47px;
+}
+#flame3 {
+    position: relative;
+    top: -489px;
+    left: -3px;
+}
+#flame4 {
+    position: relative;
+    top: -608px;
+    left: 36px;
+    height: 64px;
+}
+#flame5 {
+    position: relative;
+    top: -628px;
+    left: 68px;
+}
+#flame6 {
+    position: relative;
+    top: -709px;
+    left: 116px;
+}

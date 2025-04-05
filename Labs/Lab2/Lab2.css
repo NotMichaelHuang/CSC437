@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+}
+
+.box1
+{
+    margin: .9rem;
+    width: 25em;
+    display: inline-block;
+}
+
+.box2
+{
+    color: white;
+    padding: 0.5em;
+    background-color: black;
+}
+
+.box3
+{
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    border: 0.3rem black solid ;
+}
+
+.boxmug
+{
+    display: inline-block;
+    border: 0.2em black solid;
+    height: 7em;
+    width: 6em;
+}
+
+.wordmug
+{
+    font-size: 2em;
+}
+

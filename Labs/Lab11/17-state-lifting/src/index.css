@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 1em;
+}
+
+p {
+    margin: 1em 0;
+}
+
+button {
+    color: white;
+    padding: 0.5em 1em;
+    background-color: #3a3ae1;
+    border: 0;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1a1abd;
+}
+button:active {
+    background-color: #000075;
+}
+
+.dice-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 1em;
+}
+
+.dice-container > * {
+    border: 1px solid lightgray;
+    padding: 1em;
+}
